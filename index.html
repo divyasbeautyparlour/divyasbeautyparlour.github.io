@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sree Divya's Beauty Parlour</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ffcccc;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #333;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #ff6666;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        footer {
+            background-color: #ffcccc;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width:100%;
+        }
+
+        footer h3 {
+            margin: 0;
+            color: #333;
+        }
+
+        footer img {
+            width: 40px;
+            height: 40px;
+            margin: 0 10px;
+            border-radius: 50%;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        footer img:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Sree Divya's Beauty Parlour</h1>
+    <nav>
+        <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="services">
+        <h2>Services Offered:</h2>
+        <ul>
+            <li>Haircuts & Styling</li>
+            <li>Hair Coloring</li>
+            <li>Facials & Skin Treatments</li>
+            <li>Makeup</li>
+            <li>Bridal Packages</li>
+            <li>Spa Services</li>
+        </ul>
+    </section>
+
+    <section id="about">
+        <h2>About Us:</h2>
+        <p>
+            At Sree Divya's Beauty Parlour, we believe in enhancing your natural beauty and making you feel confident in your own skin. With our team of experienced professionals and high-quality products, we strive to provide exceptional beauty services tailored to your needs.
+        </p>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery:</h2>
+        <p>Upload Pictures Here</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us:</h2>
+        <p>
+            Address: [Your Address Here]<br>
+            Phone: [Your Phone Number Here]<br>
+            Email: [Your Email Address Here]<br>
+            <a href="#" id="whatsapp-link">WhatsApp: Click to Chat</a><br>
+            <a href="tel:9494245439">Call Us: Click to Call</a>
+        </p>
+    </section>
+</main>
+
+<footer>
+    <h3>Connect With Us:</h3>
+
+    <a href="https://www.instagram.com/skonhetss.along/"><img src="insta.jpeg" alt="Instagram" style="width: 40px;"></a>
+
+<script>
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+
+    // WhatsApp click-to-chat functionality
+    document.getElementById('whatsapp-link').addEventListener('click', function(e) {
+        e.preventDefault();
+        window.open('https://wa.me/919494245439', '_blank');
+    });
+</script>
+
+</body>
+</html>
